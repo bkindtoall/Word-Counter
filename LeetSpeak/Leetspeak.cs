@@ -17,7 +17,7 @@ namespace LeetSpeakMain
             {
                 return '0';
             }
-            else if (letter == 'I')
+            else if (letter == 'l' || letter == 'L')
             {
                 return '1';
             }
@@ -41,7 +41,13 @@ namespace LeetSpeakMain
             char[] userArray = userInput.ToCharArray();
             for(int i=0;i < userArray.Length;i++)
             {
+              if ((userArray[i]=='S' || userArray[i]=='s') && (userArray[i-1]==' ' || i==0))
+              {
+  
+              } else
+              {
                 userArray[i] = CheckLetter(userArray[i]);
+              }
             }
             string result = string.Join("", userArray);
             Console.WriteLine("Your translated L337 Sp3ak:");
