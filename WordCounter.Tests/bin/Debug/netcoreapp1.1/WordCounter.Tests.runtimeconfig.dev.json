@@ -1,0 +1,7 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/fury/.nuget/packages"
+    ]
+  }
+}
