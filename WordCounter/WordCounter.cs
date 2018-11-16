@@ -6,7 +6,22 @@ namespace WordCounterMain
 {
     public class WordCounterClass
     {
+        public static int WordCount(string word1, string word2)
+        {
+            string singleWord = (string) word1;
+            string sentenceWords = (string) word2;
+            int wordCount = 0;
 
+            if (singleWord == sentenceWords) 
+            {
+                for(int i=0;i<.Length;i++)
+                // wordCount++;
+                // return wordCount;
+            }    
+            
+        }
+
+        // str1.Equals(str2)   
         // public static char CheckLetter(char letter)
         // {
         //     // if (letter == 'e' || letter == 'E')
@@ -63,6 +78,10 @@ namespace WordCounterMain
             // string result = string.Join("", userArray);
             // Console.WriteLine("Your translated L337 Sp3ak:");
             // Console.WriteLine(result);
+            int result = WordCount;
+            Console.WriteLine("Your duplicate word count is: ");
+            Console.WriteLine(result);
+
         }
     }
 }
