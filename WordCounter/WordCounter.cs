@@ -7,42 +7,45 @@ namespace WordCounterMain
     public class WordCounterClass
     {
 
-        public static char CheckLetter(char letter)
-        {
-            if (letter == 'e' || letter == 'E')
-            {
-                return '3';
-            }
-            else if (letter == 'o' || letter == 'O')
-            {
-                return '0';
-            }
-            else if (letter == 'l' || letter == 'L')
-            {
-                return '1';
-            }
-            else if (letter == 't' || letter == 'T')
-            {
-                return '7';
-            }
-            else if (letter == 's' || letter == 'S')
-            {
-                return 'z';
-            }
-            else
-            {
-                return letter;
-            }
-        }
+        // public static char CheckLetter(char letter)
+        // {
+        //     // if (letter == 'e' || letter == 'E')
+        //     // {
+        //     //     return '3';
+        //     // }
+        //     // else if (letter == 'o' || letter == 'O')
+        //     // {
+        //     //     return '0';
+        //     // }
+        //     // else if (letter == 'l' || letter == 'L')
+        //     // {
+        //     //     return '1';
+        //     // }
+        //     // else if (letter == 't' || letter == 'T')
+        //     // {
+        //     //     return '7';
+        //     // }
+        //     // else if (letter == 's' || letter == 'S')
+        //     // {
+        //     //     return 'z';
+        //     // }
+        //     // else
+        //     // {
+        //     //     return letter;
+        //     // }
+        // }
         public static void Main()
         {
             Console.WriteLine("Please type a that might appear in your sentence");
             string userInput1 = Console.ReadLine();
+            string word1 = userInput1;
             Console.WriteLine("Please type a sentence to compare to your word");
             string userInput2 = Console.ReadLine();
             string[] words2 = userInput2.Split();
             foreach (var word2 in words2)
             {
+                System.Console.WriteLine($"<{word1}>");
+
                 System.Console.WriteLine($"<{word2}>");
             }
 
