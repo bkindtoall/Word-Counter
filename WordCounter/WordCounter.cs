@@ -6,49 +6,19 @@ namespace WordCounterMain
 {
     public class WordCounterClass
     {
-        public static int WordCount(string word1, string word2)
-        {
-            string singleWord = (string) word1;
-            string sentenceWords = (string) word2;
-            int wordCount = 0;
+        public static int CountStringOccurrences(string word1, string words2)
+                {
+                    // Loop through all instances of the string 'words2'.
+                    int count = 0;
+                    int i = 0;
+                    while ((i = word1.IndexOf(words2, i)) != -1)
+                    {
+                        i += words2.Length;
+                        count++;
+                    }
+                    return count;
+                }
 
-            if (singleWord == sentenceWords) 
-            {
-                for(int i=0;i<.Length;i++)
-                // wordCount++;
-                // return wordCount;
-            }    
-            
-        }
-
-        // str1.Equals(str2)   
-        // public static char CheckLetter(char letter)
-        // {
-        //     // if (letter == 'e' || letter == 'E')
-        //     // {
-        //     //     return '3';
-        //     // }
-        //     // else if (letter == 'o' || letter == 'O')
-        //     // {
-        //     //     return '0';
-        //     // }
-        //     // else if (letter == 'l' || letter == 'L')
-        //     // {
-        //     //     return '1';
-        //     // }
-        //     // else if (letter == 't' || letter == 'T')
-        //     // {
-        //     //     return '7';
-        //     // }
-        //     // else if (letter == 's' || letter == 'S')
-        //     // {
-        //     //     return 'z';
-        //     // }
-        //     // else
-        //     // {
-        //     //     return letter;
-        //     // }
-        // }
         public static void Main()
         {
             Console.WriteLine("Please type a that might appear in your sentence");
@@ -57,31 +27,15 @@ namespace WordCounterMain
             Console.WriteLine("Please type a sentence to compare to your word");
             string userInput2 = Console.ReadLine();
             string[] words2 = userInput2.Split();
-            foreach (var word2 in words2)
-            {
-                System.Console.WriteLine($"<{word1}>");
-
-                System.Console.WriteLine($"<{word2}>");
-            }
-
-
-            // for(int i=0;i < userArray.Length;i++)
+            // foreach (var word2 in words2)
             // {
-            //   if ((userArray[i]=='S' || userArray[i]=='s') && (userArray[i-1]==' ' || i==0))
-            //   {
-  
-            //   } else
-            //   {
-            //     userArray[i] = CheckLetter(userArray[i]);
-            //   }
-            // }
-            // string result = string.Join("", userArray);
-            // Console.WriteLine("Your translated L337 Sp3ak:");
-            // Console.WriteLine(result);
-            int result = WordCount;
-            Console.WriteLine("Your duplicate word count is: ");
-            Console.WriteLine(result);
+            //     System.Console.WriteLine($"<{word1}>");
 
+            //     System.Console.WriteLine($"<{word2}>");
+            // }
+            
+            Console.WriteLine("Your duplicate word count is: {0}", count);
+            Console.WriteLine("Your duplicate word count is: " + (WordCounterClass.CountStringOccurrences(word1, words2)));
         }
     }
 }
