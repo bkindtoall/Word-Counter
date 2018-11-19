@@ -3,7 +3,7 @@
 #### By Patricia Filipovic
 
 ## Description
-Start of 2 part project counting words where the user enters both a word and a sentence. The program then checks the  sentence for how frequently the initial word appears in the sentence. 
+Start of 2 part project counting duplicate words where the user enters both a word and a sentence. The program then checks the  sentence for how frequently the initial word appears in the sentence. 
 
 ## Specifications
 
