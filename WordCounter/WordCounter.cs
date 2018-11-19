@@ -24,14 +24,16 @@ public class WordCounterClass
 	{
 		int wordMatches = 0;
 		public string Counter(string userInputWord, string userInputSentence){
-					string[] wordList = userInputSentence.Split(' ');
-			
-					
-					foreach (string word in wordList) {
+				string[] wordList = userInputSentence.Split(' ');
+								
+				foreach (string word in wordList) 
+                {
 						
-						 if (word.ToLower() == userInputWord.ToLower())
-							 wordMatches ++;
-					}
+                    if (word.ToLower() == userInputWord.ToLower())
+                        {
+                        wordMatches ++;
+                        }
+                }
 			return wordMatches.ToString();
 		}
 	}	
