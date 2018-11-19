@@ -12,7 +12,7 @@ Start of 2 part project counting words where the user enters both a word and a s
 * A loop goes through the sentence array and after setting all case to lower, looks for matches, tabulating each occurance. 
 * Tabulation is returned to user field to be displayed on the user interface.
  
-##Install Instructions:
+## Install Instructions:
 
 - Clone from github.com on terminal using "git clone https://github.com/bkindtoall/WordCounter.git"
 
