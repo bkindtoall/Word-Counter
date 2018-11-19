@@ -7,10 +7,10 @@ namespace WordCounterMain.Tests
     public class WordCounterClassTest
     {
         [TestMethod]
-        public void CheckNumber_InputIsE_Three()
+        public void CheckNumber_Input_One()
         {
-        //     Assert.AreEqual("3", WordCounterClass.CheckLetter("e"));
-        // }
+            Assert.AreEqual("3", WordCounterClass.CheckLetter("e"));
+        }
         // [TestMethod]
         // public void CheckNumber_InputIsO_Zero()
         // {
