@@ -15,9 +15,9 @@ Start of 2 part project counting words where the user enters both a word and a s
 ## Install Instructions:
 
 In Terminal, In the WordCounter directory:
-- Clone from github.com: _git clone https://github.com/bkindtoall/WordCounter.git_
-- Run _mcs WordCounter.cs_ to create executable
-- Run the executable with Mono, _mono WordCounter.exe_
+- Clone from github.com: __git clone https://github.com/bkindtoall/WordCounter.git__
+- Run __mcs WordCounter.cs__ to create executable
+- Run the executable with Mono, __mono WordCounter.exe__
 
 ## Support and contact details
 
