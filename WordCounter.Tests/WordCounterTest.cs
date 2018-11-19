@@ -9,36 +9,26 @@ namespace WordCounterMain.Tests
         [TestMethod]
         public void CheckNumber_Input_One()
         {
-            Assert.AreEqual("3", WordCounterClass.CheckLetter("e"));
+
         }
         [TestMethod]
-        public void IsUserInputStrings_ConfirmUserInputIsString_Bool()
+        public void CheckWordToSentenceDups_Input_uno()
         {
-            string testWord = "bread";
-            string testSentence = "the bread baked in the oven";
-            Word myWord = new Word();
+            string testInputWord = "cat";
+            string testInputSentence = "cat cats Cat ! category";
+            string testResult = 
             
-            Assert.AreEqual(true, myWord.IsUserInputStrings(testWord, testSentence));
-        }        {
-            Assert.AreEqual("0", WordCounterClass.CheckLetter("o"));
-        }
+            Assert.AreEqual(testInputSentence, WordCounter.Counter(testInputWord));
+        }        
         [TestMethod]
-        public void CheckNumber_InputIsI_One()
+        public void CheckForEquality()
         {
-        string testSentence = "Snarfle Darfle";
-        RepeatCounter newRepeatCounter = new RepeatCounter(testSentence);
-        string result = newRepeatCounter.GetSentence();
-        Assert.AreEqual(testSentence, result);        
-        }
-        // [TestMethod]
-        // public void CheckNumber_InputIsT_Seven()
-        // {
-        //     Assert.AreEqual("7", WordCounterClass.CheckLetter("t"));
-        // }
-        // [TestMethod]
-        // public void CheckNumber_InputIsS_Z()
-        // {
-        //     Assert.AreEqual("z", WordCounterClass.CheckLetter("s"));
+            // var myClass = new WordCounter();
+            // var result = myClass.SomeMethodINeedToCheck();
+        
+            // var expected = new MyClass(1, "some string1");
+        
+            // Assert.That.AreEqual(expected, result, new MyClassComparer());
         }
     }
 }
